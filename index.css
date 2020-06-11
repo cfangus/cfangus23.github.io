@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+html{
+    scroll-behavior: smooth
+}
+body{
+    background-color: #eee;
+    margin: 0px;
+    padding: 0px;
+   
+}
+/*-----------------------gotopbutton------------------- */
+#back-top-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    border-style: unset;
+    color: #000;
+    border: 2px #000 solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all .3s ease;
+    font-size: 30px;
+    cursor: pointer;
+}
+#back-top-btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+/*-----------------------gotopbutton------------------- */
+/*  ---------------------------Nav ---------------------*/
+nav ul{
+    list-style: none;
+}
+
+section{
+    width: 100%;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 5%;
+    
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    margin: 30px;
+    color: #505050;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50% 0 50% 0;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    background-color: #F04903;
+    color: #fff;
+    text-transform: uppercase;
+  
+}
+
+/*  ----------Nav -----------------------*/
+
+/*-----------landing-text--------------*/
+.landing-text {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background:linear-gradient(45deg,#8614ce,#ff0057);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-text::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #eee;
+    clip-path: polygon(100% 0,0 100%,100% 100%);
+}
+.contenc{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+}
+.contenc h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 8em;
+}
+.contenc p{
+    color: #fff;
+    font-size: 2em;
+    font-family: 'DM Serif Text', serif;
+
+}
+/*-----------landing-text--------------*/
+/*-----------landing-text-animation--------------*/
+.line{
+    position: relative;
+    top: 50%;
+    width: 5em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+.anim-typewriter{
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to{
+        width: 7.7em;
+    }
+}
+@keyframes blinkTextCursor{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+/*-----------landing-text-animation--------------*/
+
+
+/*------------------ Global Button setting ---------*/
+
+button:active{
+    transform: scale(1.1);
+}
+/*-------------------------- Global Button setting *-----------------------------*/
+
+/*---------------------- Meet me *--------------------*/
+.about-container{
+    width: 80%;
+    height: 330px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-container img{
+    height: 370px;
+}
+.about-text{
+    width: 550px;
+}
+.about-text h1{
+    font-family: 'Playfair Display', serif;
+}
+.about-text p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-text button{
+    width: 120px;
+    height: 60px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    font-family: calibri;
+    background-color: #262525;
+}
+/*--------------- Meet me *---------------------*/
+/*-------------Experience-title ----------------------*/
+.experience-title{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 60px;
+}
+/*------------------Experience-title ------------*/
+/*----------------------Experience-image  -----------------*/
+.slider{
+    width: 800px;
+    height: 500px;
+    border: 3px solid #7f8c8d;
+    background: url(bg1.jpg);
+    margin: 100px auto;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    20%{
+        background: url(bg2.jpg);
+    }
+    40%{
+        background: url(bg3.jpg);
+    }
+    60%{
+        background: url(bg4.jpg);
+    }
+    80%{
+        background: url(bg5.jpg);
+    }
+    100%{
+        background: url(bg1.jpg);
+    }
+}
+
+/*-------------Experience -image ---------------*/
+/*---------------Experience -timeline --------------*/
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+.timeline ul{
+    margin: 0;
+    padding: 0;
+}
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.content{
+    padding-bottom: 20px;
+}
+.content h3{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.content p{
+    font-family: 'Open Sans', sans-serif;
+}
+.time h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.timeline ul li:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+.timeline ul li:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+.timeline ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgba(233, 33, 99, 1);
+}
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/*-----------------Experience -timeline ----------*/
+
+/*-----------------Interest-video---------------*/
+.contenb h1{
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.showcase{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-container video{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.video-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.contenb{
+    font-family: 'Permanent Marker', cursive;
+    z-index: 10;
+}
+/*--------------Interest  about -------------*/
+.holdingcontainer{
+    width: 100%;
+    display: flex;
+    background: transparent;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.internalcontainerL{
+    flex: 1;
+    background: white;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.internalcontainerL h1{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.internalcontainerL p{
+    padding: 20px;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+.internalcontainerM{
+    flex: 1;
+    background: red;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.internalcontainerM h1{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.internalcontainerM p{
+    padding: 20px;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.internalcontainerR{
+    flex: 1;
+    background-color: gray;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.internalcontainerR h1{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.internalcontainerR p{
+    padding: 20px;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+/*--------------Interest  about -------------*/
+
+/*-----------Contact-title----*/
+.contact-title{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 60px;
+}
+/*-------------Contact-title----*/
+
+/*--------------Contact-info -------------*/
+
+.contact-info-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.contact-info .box3{
+    position: relative;
+    width: 350px;
+    padding: 100px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.contact-info .box3::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+.contact-info .box3 .icon1{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.contact-info .box3:nth-child(1) .icon1{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+.contact-info .box3:nth-child(1):hover .icon1{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+.contact-info .box3:nth-child(2) .icon1{
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+.contact-info .box3:nth-child(2):hover .icon1{
+    box-shadow: 0 0 0 400px #23e629;
+}
+
+.contact-info .box3:nth-child(3) .icon1{
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+.contact-info .box3:nth-child(3):hover .icon1{
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.contact-info .box3 .contenc1{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.contact-info .box3:hover .contenc1{
+    color: #fff;
+
+}
+.contact-info .box3 .contenc1 h3 h4{
+    margin: 10px 0;
+    padding: 0;
+}
+.contact-info .box3 .contenc1 h3{
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+}
+.contact-info .box3 .contenc1 h4{
+    font-size: 23px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.contact-info .box3 .contenc1 p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-info .box3 .contenc1 a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+    font-family: 'Playfair Display', serif;
+}
+
+/*--------------Contact-info -------------*/
+
+
+/* ------------------footer --------------*/
+.footer{
+    height: 2em;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    font-size: 180% ;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* -------------------footer----------------*/
