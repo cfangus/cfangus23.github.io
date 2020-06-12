@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html{
     scroll-behavior: smooth
@@ -370,70 +370,81 @@ button:active{
     font-family: 'Permanent Marker', cursive;
     z-index: 10;
 }
-/*--------------Interest  about -------------*/
-.holdingcontainer{
-    width: 100%;
+/*--------------Testimonials -------------*/
+.test-body{
     display: flex;
-    background: transparent;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     box-sizing: border-box;
-    flex-direction: row;
-    padding: 40px;
 }
 
-.internalcontainerL{
-    flex: 1;
-    background: white;
+.container-test{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.container-test .box-test{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 420px;
+    margin: 20px;
+    background: #121e27;
+}
+
+.container-test .box-test .content-test{
     padding: 30px;
-    font-size: 18px;
     text-align: center;
 }
-.internalcontainerL h1{
-    font-family: 'Lexend Deca', sans-serif;
+
+.container-test .box-test .content-test .quote{
+    max-width: 48px;
 }
 
-.internalcontainerL p{
-    padding: 20px;
-    font-size: 28px;
-    font-family: 'Kaushan Script', cursive;
+.container-test .box-test .content-test p{
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-.internalcontainerM{
-    flex: 1;
-    background: red;
-    padding: 20px;
-    font-size: 18px;
-    text-align: center;
-}
-.internalcontainerM h1{
-    font-family: 'Lexend Deca', sans-serif;
+.container_test .box_test .content_test .user{
+    max-width: 72px;
+    border-radius: 50%;
 }
 
-.internalcontainerM p{
-    padding: 20px;
-    font-size: 28px;
-    font-family: 'Kaushan Script', cursive;
+.container-test .box-test .content-test h3{
+    color: #33d1a0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
-.internalcontainerR{
-    flex: 1;
-    background-color: gray;
-    padding: 30px;
-    font-size: 18px;
-    text-align: center;
-}
-.internalcontainerR h1{
-    font-family: 'Lexend Deca', sans-serif;
+@media (max-width: 1050px){
+    .container-test{
+        
+        justify-content: center;
+    }
 }
 
-.internalcontainerR p{
-    padding: 20px;
-    font-size: 28px;
-    font-family: 'Kaushan Script', cursive;
-    
+@media (max-width: 768px){
+    .container-test{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
 }
 
-/*--------------Interest  about -------------*/
+/*---------Testimonials -------------*/
 
 /*-----------Contact-title----*/
 .contact-title{
@@ -458,10 +469,10 @@ button:active{
 
 }
 
-.contact-info .box3{
+.contact-info .contact-box3{
     position: relative;
     width: 350px;
-    padding: 100px;
+    padding: 50px;
     background: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     border-radius: 4px;
@@ -470,7 +481,7 @@ button:active{
     overflow: hidden;
     text-align: center;
 }
-.contact-info .box3::before{
+.contact-info .contact-box3::before{
     content: '';
     width: 50%;
     height: 100%;
@@ -481,7 +492,7 @@ button:active{
     z-index: 2;
     pointer-events: none;
 }
-.contact-info .box3 .icon1{
+.contact-info .contact-box3 .icon1{
     position: relative;
     width: 80px;
     height: 80px;
@@ -497,71 +508,59 @@ button:active{
     transition: 1s;
 }
 
-.contact-info .box3:nth-child(1) .icon1{
+.contact-info .contact-box3:nth-child(1) .icon1{
     box-shadow: 0 0 0 0 #e91e63;
     background: #e91e63;
 }
-.contact-info .box3:nth-child(1):hover .icon1{
+.contact-info .contact-box3:nth-child(1):hover .icon1{
     box-shadow: 0 0 0 400px #e91e63;
 }
 
-.contact-info .box3:nth-child(2) .icon1{
+.contact-info .contact-box3:nth-child(2) .icon1{
     box-shadow: 0 0 0 0 #23e629;
     background: #23e629;
 }
-.contact-info .box3:nth-child(2):hover .icon1{
+.contact-info .contact-box3:nth-child(2):hover .icon1{
     box-shadow: 0 0 0 400px #23e629;
 }
 
-.contact-info .box3:nth-child(3) .icon1{
+.contact-info .contact-box3:nth-child(3) .icon1{
     box-shadow: 0 0 0 0 #2196f3;
     background: #2196f3;
 }
-.contact-info .box3:nth-child(3):hover .icon1{
+.contact-info .contact-box3:nth-child(3):hover .icon1{
     box-shadow: 0 0 0 400px #2196f3;
 }
 
-.contact-info .box3 .contenc1{
+.contact-info .contact-box3 .contenc1{
     position: relative;
     z-index: 1;
     transition: 0.5s;
 }
-.contact-info .box3:hover .contenc1{
+.contact-info .contact-box3:hover .contenc1{
     color: #fff;
 
 }
-.contact-info .box3 .contenc1 h3 h4{
+.contact-info .contact-box3 .contenc1 h3 h4{
     margin: 10px 0;
     padding: 0;
 }
-.contact-info .box3 .contenc1 h3{
+.contact-info .contact-box3 .contenc1 h3{
     font-size: 25px;
     font-family: 'Poiret One', cursive;
 }
-.contact-info .box3 .contenc1 h4{
+.contact-info .contact-box3 .contenc1 h4{
     font-size: 23px;
     font-family: 'Caveat Brush', cursive;
 }
 
-.contact-info .box3 .contenc1 p{
+.contact-info .contact-box3 .contenc1 p{
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
-
-.contact-info .box3 .contenc1 a{
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
-    font-family: 'Playfair Display', serif;
-}
 
 /*--------------Contact-info -------------*/
 
@@ -569,11 +568,11 @@ button:active{
 /* ------------------footer --------------*/
 .footer{
     height: 2em;
-    padding: 1em;
+    padding: 0em;
     color: rgba(255, 255, 255, 0.75);
     background-color: rgb(25, 25, 25);
     text-align: center;
-    font-size: 180% ;
+    font-size: 50% ;
     font-family: 'Playfair Display', serif;
 }
 
