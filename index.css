@@ -211,29 +211,62 @@ button:active{
 }
 /*------------------Experience-title ------------*/
 /*----------------------Experience-image  -----------------*/
-.slider{
-    width: 1280px;
-    height: 720px;
-    border: 3px solid #7f8c8d;
-    background: url(experience_grad.jpg);
-    margin: 100px auto;
-    animation: slide 20s infinite;
+.contenx{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    
 }
-@keyframes slide{
-    20%{
-        background: url(experience_book.jpeg);
+.contenx .boy{
+    position: relative;
+    background: #ccc;
+}
+.contenx .boy img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenx .boy.a{
+    grid-row: span 2;
+}
+.contenx .boy.b,
+.contenx .boy.f,
+.contenx .boy.h,
+.contenx .boy.j{
+    grid-column: span 2;
+}
+@media (max-width: 991px){
+    .contenx{
+        
+        grid-template: "1fr 1fr 1fr " 250px
+                       "1fr 1fr 1fr " 250px
+                       "1fr 1fr 1fr " 250px
+                       "1fr 1fr 1fr " 250px
+                       "1fr 1fr 1fr " 250px;
+        
     }
-    40%{
-        background: url(experience_vol.jpeg);
+}
+
+@media (max-width: 768px){
+    .contenx{
+        
+        grid-template: "1fr 1fr 1fr " 200px
+                       "1fr 1fr 1fr " 200px
+                       "1fr 1fr 1fr " 200px
+                       "1fr 1fr 1fr " 200px
+                       "1fr 1fr 1fr " 200px
+                       "1fr 1fr 1fr " 200px
+                       "1fr 1fr 1fr " 200px;
+        
     }
-    60%{
-        background: url(experience_hkb.JPG);
-    }
-    80%{
-        background: url(experience_xian.JPG);
-    }
-    100%{
-        background: url(experience_grad.jpg);
+    .contenx .box.h{
+        grid-column: span 1;
     }
 }
 
