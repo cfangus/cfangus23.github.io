@@ -212,28 +212,28 @@ button:active{
 /*------------------Experience-title ------------*/
 /*----------------------Experience-image  -----------------*/
 .slider{
-    width: 800px;
-    height: 500px;
+    width: 1280px;
+    height: 720px;
     border: 3px solid #7f8c8d;
-    background: url(bg1.jpg);
+    background: url(experience_grad.jpg);
     margin: 100px auto;
     animation: slide 20s infinite;
 }
 @keyframes slide{
     20%{
-        background: url(bg2.jpg);
+        background: url(experience_book.jpeg);
     }
     40%{
-        background: url(bg3.jpg);
+        background: url(experience_vol.jpeg);
     }
     60%{
-        background: url(bg4.jpg);
+        background: url(experience_hkb.JPG);
     }
     80%{
-        background: url(bg5.jpg);
+        background: url(experience_xian.JPG);
     }
     100%{
-        background: url(bg1.jpg);
+        background: url(experience_grad.jpg);
     }
 }
 
