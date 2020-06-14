@@ -352,14 +352,28 @@ button:active{
     padding: 0;
 }
 
+
 /*-----------------Experience -timeline ----------*/
 
 /*-----------------Interest-video---------------*/
+.contenb{
+    font-family: 'Permanent Marker', cursive;
+    z-index: 10;
+}
+
 .contenb h1{
     font-weight: 300;
     font-size: 60px;
     line-height: 1.2;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+.contenb h3{
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: right;
+   
 }
 
 .showcase{
@@ -369,7 +383,6 @@ button:active{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 0 20px;
     color: #fff;
 }
@@ -399,17 +412,15 @@ button:active{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.contenb{
-    font-family: 'Permanent Marker', cursive;
-    z-index: 10;
-}
+
 /*--------------Testimonials -------------*/
 .test-body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     box-sizing: border-box;
+    
 }
 
 .container-test{
@@ -494,16 +505,28 @@ button:active{
     font-family: 'Caveat Brush', cursive;
     font-size: 60px;
 }
+
 /*-------------Contact-title----*/
 
 /*--------------Contact-info -------------*/
-
+.contact-info-title{
+    background: linear-gradient(-45deg, #EE7752,#E73C7E , #23A6D5 , #23D5AB);
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 50px;
+    border-radius: 100px;
+}
 .contact-info-body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
+    
 }
+.contact-info-body h1{
+    text-align: center;
+}
+
 .contact-info{
     display: flex;
     flex-wrap: wrap;
@@ -609,12 +632,12 @@ button:active{
 
 /* ------------------footer --------------*/
 .footer{
-    height: 2em;
-    padding: 0em;
+    height: 1em;
+    padding: 2em;
     color: rgba(255, 255, 255, 0.75);
     background-color: rgb(25, 25, 25);
     text-align: center;
-    font-size: 50% ;
+    font-size: 100% ;
     font-family: 'Playfair Display', serif;
 }
 
