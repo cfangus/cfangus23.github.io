@@ -7,8 +7,8 @@ function backToTop(){
 }
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navtag = document.getElementsByClassName('nav-tag')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
 toggleButton.addEventListener('click', () => {
-    navtag.classList.toggle('active')
+    navbarLinks.classList.toggle('active')
 })
