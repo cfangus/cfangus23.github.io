@@ -49,27 +49,33 @@ body{
     background-color: black;
     color: white;
 }
+
 .brand-title{
     font-size: 1.5rem;
     margin: .5rem;
 }
+
 .nav-tag ul{
     margin: 0;
     padding: 0;
     display: flex;
 }
+
 .nav-tag li{
     list-style: none;   
 }
+
 .nav-tag li a{
     text-decoration: none;
     color: white;
     padding: 1rem;
     display: block;
 }
+
 .nav-tag li:hover{
     background-color: #555;
 }
+
 .toggle-button{
     position: absolute;
     top: .75rem;
@@ -80,17 +86,20 @@ body{
     width: 30px;
     height: 21px;
 }
+
 .toggle-button .bxy{
     height: 3px;
     width: 100%;
     background-color: white;
     border: 10px;
 }
+
 @media (max-width:400px){
     .toggle-button {
         display: flex;
     }
     .nav-tag {
+        display: none;
         width: 100%;
     }
     .navbar {
