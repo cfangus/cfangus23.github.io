@@ -19,6 +19,7 @@ body{
     padding: 0px;
    
 }
+
 /*-----------------------gotopbutton------------------- */
 #back-top-btn{
     position: fixed;
@@ -121,6 +122,7 @@ ul li a:hover{
     font-family: 'DM Serif Text', serif;
 
 }
+
 /*-----------landing-text--------------*/
 /*-----------landing-text-animation--------------*/
 .line{
@@ -446,11 +448,7 @@ button:active{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
-@media (max-width:767px){
-    .showcase{
-        display: none;
-    }
-}
+
 
 /*--------------Testimonials -------------*/
 .test-body{
