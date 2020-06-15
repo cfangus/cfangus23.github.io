@@ -42,46 +42,75 @@ body{
 }
 /*-----------------------gotopbutton------------------- */
 /*  ---------------------------Nav ---------------------*/
-nav ul{
-    list-style: none;
-}
-
-section{
-    width: 100%;
-    background-size: cover;
-}
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: #FFFFFF;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    padding: 0px 5%;
-    
+    background-color: black;
+    color: white;
 }
-
-nav ul{
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.nav-tag ul{
+    margin: 0;
+    padding: 0;
     display: flex;
 }
-
-nav ul li a{
-    margin: 30px;
-    color: #505050;
-    font-size: 20px;
-    font-weight: 700;
+.nav-tag li{
+    list-style: none;   
+}
+.nav-tag li a{
     text-decoration: none;
-    border-radius: 50% 0 50% 0;
-    transition: 0.5s;
+    color: white;
+    padding: 1rem;
+    display: block;
 }
-
-ul li a:hover{
-    background-color: #F04903;
-    color: #fff;
-    text-transform: uppercase;
-  
+.nav-tag li:hover{
+    background-color: #555;
 }
-
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bxy{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border: 10px;
+}
+@media (max-width:400px){
+    .toggle-button {
+        display: flex;
+    }
+    .nav-tag {
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-tag ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-tag li {
+        text-align: center;
+    }
+    .nav-tag li a {
+        padding: .5rem 1rem;
+    }
+    .nav-tag.active{
+        display: flex;
+    }
+}
 /*  ----------Nav -----------------------*/
 
 /*-----------landing-text--------------*/
@@ -120,8 +149,14 @@ ul li a:hover{
     color: #fff;
     font-size: 2em;
     font-family: 'DM Serif Text', serif;
-
 }
+
+@media only screen and (max-width:767px){
+    .landing-text{
+        display: none;
+    }
+}
+
 
 /*-----------landing-text--------------*/
 /*-----------landing-text-animation--------------*/
@@ -180,6 +215,7 @@ button:active{
     position: relative;
     justify-content: space-evenly;
     align-items: center;
+    display: none;
 }
 .about-container img{
     height: 360px;
