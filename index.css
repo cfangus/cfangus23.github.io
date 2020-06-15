@@ -242,7 +242,8 @@ button:active{
 .contenx .boy.j{
     grid-column: span 2;
 }
-@media (max-width: 991px){
+
+@media (max-width: 1000px){
     .contenx{
         
         grid-template: "1fr 1fr 1fr " 250px
@@ -358,7 +359,7 @@ button:active{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 
     .timeline{
         width: 100%;
@@ -445,6 +446,11 @@ button:active{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+@media (max-width:767px){
+    .showcase{
+        display: none;
+    }
+}
 
 /*--------------Testimonials -------------*/
 .test-body{
@@ -527,6 +533,7 @@ button:active{
         width: 100%;
         height: auto;
         padding: 30px 20px;
+        align-items: center;
     }
 }
 
