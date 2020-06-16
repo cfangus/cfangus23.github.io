@@ -520,6 +520,18 @@ button:active{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width:767px){
+    .showcase{
+        background-color: #33d1a0;
+    }
+    .video-container{
+        display: none;
+        margin-bottom: 20px;
+    }
+    .contenb h3{
+        display: none;
+    }
+}
 
 /*--------------Testimonials -------------*/
 .test-body{
@@ -603,6 +615,7 @@ button:active{
         height: auto;
         padding: 30px 20px;
         align-items: center;
+        
     }
 }
 
@@ -743,15 +756,14 @@ button:active{
 
 /* ------------------footer --------------*/
 .footer{
-    height: 1em;
-    padding: 2em;
+    height: 4em;
+    padding: 1em;
     color: rgba(255, 255, 255, 0.75);
     background-color: rgb(25, 25, 25);
     text-align: center;
-    font-size: 90% ;
+    font-size: 70% ;
     font-family: 'Playfair Display', serif;
 }
-
 
 
 /* -------------------footer----------------*/
