@@ -13,9 +13,3 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
-var promise = document.querySelector('video').play();
-if( promise !== undefined){
-    promise.catch(error => {}). then(() => {
-
-    });
-}
